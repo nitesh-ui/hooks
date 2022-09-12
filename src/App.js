@@ -7,6 +7,9 @@ import DataFetching from './components/useEffect/DataFetching';
 import HookCounterOne from './components/useEffect/HookCounterOne';
 import HookMouse from './components/useEffect/HookMouse';
 import Counter from './components/useMemo/Counter';
+import ClassTimer from './components/useRef/ClassTimer';
+import FocusInput from './components/useRef/FocusInput';
+import HookTimer from './components/useRef/HookTimer';
 import HookCounter from './components/useState/HookCounter';
 import HookCounterFour from './components/useState/HookCounterFour';
 import HookCounterThree from './components/useState/HookCounterThree';
@@ -34,6 +37,11 @@ function App() {
       </div>
       <div className="App">
         <Counter/>
+      </div>
+      <div className="App">
+        <FocusInput/>
+        <ClassTimer/>
+        <HookTimer/>
       </div>
     </div>
   );
