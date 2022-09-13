@@ -6,6 +6,8 @@ import ParentComponent from './components/useCallback/ParentComponent';
 import DataFetching from './components/useEffect/DataFetching';
 import HookCounterOne from './components/useEffect/HookCounterOne';
 import HookMouse from './components/useEffect/HookMouse';
+import LayoutEffect from './components/useLayoutEffect/LayoutEffect';
+import SetValueHook from './components/useLayoutEffect/SetValueHook';
 import Counter from './components/useMemo/Counter';
 import ClassTimer from './components/useRef/ClassTimer';
 import FocusInput from './components/useRef/FocusInput';
@@ -42,6 +44,10 @@ function App() {
         <FocusInput/>
         <ClassTimer/>
         <HookTimer/>
+      </div>
+      <div className="App">
+        <LayoutEffect/>
+        <SetValueHook/>
       </div>
     </div>
   );
