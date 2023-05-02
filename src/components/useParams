@@ -1,0 +1,33 @@
+/---------------- App.js -------------------/
+import React from "react";
+import Blog from "./components/Blog";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/page/:id" element={<Blog />} />
+      </Routes>
+    </div>
+  );
+}
+
+/--------------------- Blog.js ----------------/
+
+import React from "react";
+import { useParams } from "react-router-dom";
+
+export default function Blog() {
+  let id = useParams();
+  return (
+    <div className="App">
+      <h1>Hello Blog</h1>
+      <div>{id.id}</div>
+    </div>
+  );
+}
